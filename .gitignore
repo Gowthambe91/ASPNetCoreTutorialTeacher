@@ -1,0 +1,13 @@
+DesignTimeBuild
+*.suo
+*.lock
+*.ide
+*.ide-shm
+*.ide-wal
+VSWorkspaceState.json
+*.json
+/MyFirstNetCoreApp/MyFirstNetCoreApp/obj/Release/netcoreapp2.0
+/MyFirstNetCoreApp/MyFirstNetCoreApp/obj
+/MyFirstNetCoreApp/MyFirstNetCoreApp/bin/Debug/netcoreapp2.0
+slnx.sqlite
+*.user
