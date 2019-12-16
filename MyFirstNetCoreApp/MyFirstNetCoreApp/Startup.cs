@@ -19,6 +19,9 @@ namespace MyFirstNetCoreApp
              * in the application, we just have to include it in the parameter of the constructor of the class, IoC container will automatically inject the dependant class.
              Asp.Net Core refers dependant classes as service, so whenever we read service , consider it as a class going to be used in some other class.
              ConfigureServices method includes IServiceCollection parameter to register services to the IoC container.*/
+
+            services.Add(new ServiceDescriptor(typeof(ILog), new MyConsoleLogger())); /*Registering the ILog type for the class MyConsoleLogger, so whenever/wherever ILog type is referred
+                                                                                        MyConsoleLogger will be injected, whether in property/method/constructor.*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
